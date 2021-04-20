@@ -1,0 +1,114 @@
+.header {
+    position: relative;
+    box-shadow: $shadow-bottom;  
+
+    &__band {
+        height: 10px;
+        background-color: $color-primary;
+
+            &--bigger {
+                height: auto;
+            }
+    }
+
+    &__logo {
+        height: 80px;
+        width: auto;
+
+        @media screen and (max-width: #{$phone}) {
+            height: 50px;
+        }
+    }
+
+    &__nav-wrapper {
+        width: 90%;
+
+        @media screen and (max-width: #{$phone}) {
+            width: auto;
+        }
+    }
+
+    &__nav-link {
+        color: var(--bs-dark);
+        border-bottom: 1px solid $white;
+        transition: all 500ms ease-out;
+
+        &:hover, &.active {
+            color: var(--bs-dark);
+            border-bottom: 1px solid $color-primary;
+
+            @media screen and (max-width: #{$phone}) {
+                border: none;
+                color: $color-primary;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__cart {
+        top: 30%;
+        right: 4%;
+
+        @media screen and (max-width: #{$phone}) {
+            top: 1rem;
+            right: 25%;
+        }
+    }
+
+    &__cart-logo {
+        height: 30px;
+        width: auto;
+        transition: all 500ms ease-out;
+
+        &:hover {
+            fill:$color-primary;
+        }
+
+        @media screen and (max-width: #{$phone}) {
+            height: 25px;
+        }
+    }
+
+    .avatar {
+        width: fit-content;
+        position: relative;
+    }
+
+    .avatar-container {
+        border-radius: 50%;
+        border: 1px solid #d1d1d1;
+        box-sizing: border-box;
+        overflow: hidden;
+        position:relative;
+
+    }
+
+    .avatar-image {
+        border-radius: 50%;
+        height: 100%;
+        width: auto;
+    }
+
+    .avatar-size {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #block_container {
+        display: flex;
+        justify-content: center;
+    }
+
+.avatar, .container
+{
+    display:inline;
+    width: 50%;
+    float: left;
+
+}
+
+.container {
+    margin-top :10px;
+}
+
+}

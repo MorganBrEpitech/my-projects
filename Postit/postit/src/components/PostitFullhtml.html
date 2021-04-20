@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <button><i class="bi bi-arrow-left-square"></i> Retour à la liste des post-it</button>
+      <textarea></textarea>
+  </body>
+</html>
+
+<style>
+  body { background:url(https://img.freepik.com/free-vector/graph-paper_127747-40.jpg?size=626&ext=jpg) #cacaca; margin:30px; }
+
+  @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+* { box-sizing:border-box; }
+
+button {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 70px 0px 5px 340px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button:hover {
+    color:red;
+}
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:25px 25px 40px;
+  width:700px;
+  height:400px; 
+  font:20px 'Gloria Hallelujah', cursive; 
+  line-height:1.5;
+  border:0;
+  border-radius:3px;
+  background: linear-gradient(#F9EFAF, #F7E98D);
+  box-shadow:0 4px 6px rgba(0,0,0,0.1);
+  overflow:hidden;
+  transition:box-shadow 0.5s ease;
+  max-width: 700px;
+  max-height: 400px;
+  min-height: 400px;
+}
+textarea:hover { box-shadow:0 5px 8px rgba(0,0,0,0.15); }
+textarea:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }
+
+</style>

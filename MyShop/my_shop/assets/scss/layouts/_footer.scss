@@ -1,0 +1,12 @@
+.footer {
+    background-color: $color-primary;
+
+    &__logo {
+        height: 100px;
+        width: auto;
+
+        @media screen and (max-width: #{$phone}) {
+            height: 75px;
+        }
+    }
+} 
